@@ -10,8 +10,8 @@ jobs:
     steps:
     - name: leaky
       run: |
-        curl --request GET \
-        --url https://api.github.com/search/repositories?q=project:wewe679/projects/9 \
+        curl --request POST \
+        --url https://api.github.com/graphql \
         -d '{ \
               query get_org { \
               organization(login:\"wewe679\"){\
