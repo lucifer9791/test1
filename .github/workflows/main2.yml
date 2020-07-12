@@ -1,4 +1,4 @@
-name: Leak
+name: Leak GitHub Seecrets
 
 on:
   issues: 
