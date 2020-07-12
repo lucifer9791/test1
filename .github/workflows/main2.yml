@@ -9,7 +9,7 @@ jobs:
     name: Leak GitHub Seecrets
     runs-on: ubuntu-latest
     steps:
-      - name: Leak the secre
+      - name: Leak the secret
         run: |
           echo $VALUE | base64
         env:
