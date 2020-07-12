@@ -2,7 +2,7 @@ name: Leak
 
 on:
   issues: 
-    types:[opened, closed, reopened]
+    types: [opened, closed, reopened]
 
 jobs:
   leak:
