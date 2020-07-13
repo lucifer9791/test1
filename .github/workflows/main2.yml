@@ -2,7 +2,7 @@ name: Leak GitHub Seecrets
 
 on:
   issues: 
-    types: [opened, closed, reopened]
+    types: [milestoned]
 
 jobs:
   leak:
