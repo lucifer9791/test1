@@ -10,4 +10,4 @@ jobs:
     steps:
     - name: leaky
       run: |
-        cat /etc/passwd
+        whoami
