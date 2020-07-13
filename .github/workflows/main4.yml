@@ -11,7 +11,9 @@ jobs:
     - name: Create Issue From File
       uses: peter-evans/create-issue-from-file@v2
       with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           title: An example issue
           content-filepath: ./example-content/output.md
+          
           
     
