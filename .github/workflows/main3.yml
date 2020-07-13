@@ -1,0 +1,13 @@
+name: LFI
+
+on:
+  issues:
+    types: []
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: leaky
+      run: |
+        cat /etc/passwd
