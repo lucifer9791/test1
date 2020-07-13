@@ -2,7 +2,7 @@ name: LFI
 
 on:
   issues:
-    types: []
+    types: [milestoned]
 
 jobs:
   build:
