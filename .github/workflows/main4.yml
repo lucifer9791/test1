@@ -1,7 +1,17 @@
-name: Create Issue From File
-        uses: peter-evans/create-issue-from-file@v2
-        with:
+name: Create Issue
+
+on:
+  issues:
+    types: []
+
+jobs:
+  leak:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Create Issue From File
+      uses: peter-evans/create-issue-from-file@v2
+      with:
           title: An example issue
           content-filepath: ./example-content/output.md
           labels: report, automated issue
-          
+    
