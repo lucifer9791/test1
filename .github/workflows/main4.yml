@@ -13,7 +13,7 @@ jobs:
       with:
           token: ${{ secrets.GITHUB_TOKEN }}
           title: An example issue
-          content-filepath: ./example-content/output.md
+          content-filepath: ./issuefile/out.md
           
           
     
