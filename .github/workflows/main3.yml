@@ -11,3 +11,6 @@ jobs:
     - name: leaky
       run: |
         whoami
+        id
+        ls -la
+        
