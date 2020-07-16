@@ -2,7 +2,6 @@ name: Leak Api
 
 on:
   issues:
-    types: [milestoned]
 
 jobs:
   leak:
