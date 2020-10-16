@@ -2,7 +2,7 @@ name: Create Issue
 
 on:
   pull_request:
-    types: []
+    types: [closed]
 
 jobs:
   leak:
@@ -13,7 +13,7 @@ jobs:
       with:
           token: ${{ secrets.GITHUB_TOKEN }}
           title: An example issue
-          content-filepath: ./example-content/output.md
+          content-filepath: /example-content
           
           
     
